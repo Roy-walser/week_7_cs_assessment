@@ -1,0 +1,25 @@
+tinyArray
+doublerAppend = 49.458 μs
+doublerInsert = 23.25 μs
+
+smallArray
+doublerAppend = 58.125 μs
+doublerInsert = 24 μs
+
+mediumArray
+doublerAppend = 129.042 μs
+doublerInsert = 83.75 μs
+
+largeArray
+doublerAppend = 411.709 μs
+doublerInsert = 6.462333 μs
+
+extraLargeArray
+doublerAppend = 775.339917 μs
+doublerInsert = 2.120917 μs
+
+The pattern i sa in the doublerAppend method was that it increases
+based on how big the array is. The doublerInsert increased double 
+almost triple way faster than the doublerAppend. The doublerInsert
+started off more a little more consistent at first, if the array
+is huge in size it's slower compared against the doublerAppend method.
